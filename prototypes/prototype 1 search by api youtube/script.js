@@ -24,10 +24,21 @@ $(document).ready(function(){
       data.items.forEach(items => {
         video=`
         <iframe width="420" height="315" src="https://www.youtube.com/embed/${items.id.videoId}" frameborder="0" allowfullscreen></iframe>
-        <button>add to Favoris</button>`  
+        <button class='addtoplay'>Add to playlist</button>`  
       $("#videos").append(video)
       });
     })
  
   }
-  });
+
+
+  
+
+
+
+
+
+
+
+
+})

@@ -1,0 +1,10 @@
+The code starts by getting the URL for the YouTube search API.
+Then it sends a request to that URL with a key and some parameters, in this case "key=my-youtube-search-key&type=video&part=snippet&maxResults="+maxResults+"&q="+search.
+The data returned from the request is then logged to console.log().
+The code then iterates through each of the items in the response and creates an <iframe> element with its own src attribute pointing to https://www.youtube.com/embed/${items.id}.
+It also creates a button class called addtoplay which when clicked will add that video to your playlist on YouTube (see below).
+Finally, it appends all of these elements into #videos so they are displayed as videos on your page
+The code is a function that searches for videos on YouTube.
+The code begins by requesting the Google API with the key passed in as an argument.
+This request will return a JSON object containing information about the search.
+Next, this data is used to create an iframe and button that can be appended to the DOM of a webpag
