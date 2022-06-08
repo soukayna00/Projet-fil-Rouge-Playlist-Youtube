@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rosarivo:ital@1&family=Rozha+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Roboto&family=Rosarivo:ital@1&family=Rozha+One&display=swap');
+
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding:0;
+  background-color: rgb(255, 251, 251);
+}
+li,a,button{
+  font-family: 'Montserrat',sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color :black;
+  text-decoration: none;
+}
+header{
+  display: flex;
+  justify-content:space-between;
+  align-items:center;
+  padding: 30px 10%;
+}
+.logo{
+  cursor: pointer;
+}
+.nav-links {
+list-style: none;
+}
+
+.nav-links li{
+  display:inline-block;
+  padding: 1px,20px;
+  margin: 20px;
+}
+.nav_links li a {
+  transition :all 0.3s ease 0s;
+  margin: 13px;
+
+}
+.nav_links li a :hover {
+  color:#616161
+}
+button{
+  padding: 9px 25px;
+  background-color: #FDC800;
+  border: none;
+  border-radius:50px;
+  cursor:pointer;
+  transition :all 0.3s ease 0s;
+}
+button:hover{
+  color: #FDC800;
+  background-color: #ffffff;
+}
+.container-1-Texts h1{
+  font-family: 'DM Serif Display',sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 57px;
+  line-height: 76px;
+   font-size: 40px;
+   color: #002147;
+}
+.container-1-Texts h3{
+color:#00B2B2
+}
+.container-1-Texts {
+margin-left: 100px;
+}
+.container{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container2{
+  display: flex;
+  
+}
+.clss4 {
+  margin-left: 70px;
+  margin-top: 120px;
+  
+}
+.clss3 {
+  margin-left: 100px;
+  margin-top: 120px;
+}
+.clss2 {
+  margin-left: 180px;
+  margin-top: 120px;
+}
+.clss1 {
+  margin-left: 100px;
+  margin-top: 120px;
+}
+.container2 h4{
+  font-size: medium;
+  color: #002147;
+}
+.clss1 h4{
+  color:#00B2B2;
+  font-size: 20px;
+}
+.clss2 h4{
+  color:#00B2B2;
+  font-size: 20px;
+}
+.clss3 h4{
+  color:#00B2B2;
+  font-size: 20px;
+}
+.clss4 h4{
+  color:#00B2B2;
+  font-size: 20px;
+}
+.img-search img{
+  height: 500px;
+  margin-top: 170px;
+  margin-left: 70px;
+}
+.search-section{
+  display:flex
+}
+.text-search{
+  margin-top:250px;
+  margin-left: 150px;
+}
+.text-search h3{
+  color: #002147;
+  font-size: 48px;
+  font-family: 'DM Serif Display',sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+.text-search input{
+  border-color: #00B2B2;
+  border-radius: 8px;
+  width: 443px;
+  height: 38px;
+  margin-top: 75px;
+  background-color: #E0E0E0;
+}
+
+/* footer css */
+.container-footer{
+  background-color:#002147
+}
