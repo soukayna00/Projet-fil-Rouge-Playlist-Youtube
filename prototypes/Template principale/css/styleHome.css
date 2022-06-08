@@ -143,6 +143,9 @@ margin-left: 100px;
 }
 
 /* footer css */
-.container-footer{
-  background-color:#002147
+.footer {
+  background-color:#002147;
+  text-align: center;
+  padding: 3px;
+  color: white;
 }
