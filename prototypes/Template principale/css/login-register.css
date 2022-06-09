@@ -6,7 +6,6 @@
 .hero{
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(assets\img\1.jpg);
     background-position: center;
     background-size: cover;
     position: absolute;
@@ -94,3 +93,11 @@ span{
     left:450px;
     
 }
+/* .gobackButton{
+    padding: 9px 25px;
+    background-color: #FDC800;
+    border: none;
+    border-radius:50px;
+     margin: 100 100 100 100;
+    
+} */
