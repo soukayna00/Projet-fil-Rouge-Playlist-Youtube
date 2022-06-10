@@ -1,0 +1,36 @@
+<?php
+
+class userClass{
+  private $User_Id;
+  private $email;
+  private $password;
+
+
+ public function getUser_Id(){
+    return $this->User_Id;
+ }
+ public function setUser_Id($User_Id){
+    $this->User_Id = $User_Id;
+ }
+ public function getemail(){
+  return $this->email;
+}
+public function setemail($email){
+  $this->email = $email;
+}
+
+public function getpassword(){
+  return $this->password;
+}
+public function setpassword($password){
+  $this->password = $password;
+}
+
+
+}
+
+
+
+
+
+?>
