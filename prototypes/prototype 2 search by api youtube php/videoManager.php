@@ -8,7 +8,7 @@ class videoManager {
 
   private function getConnection(){
       if(is_null($this->Connection)){
-          $this->Connection = mysqli_connect('localhost', 'maskoul', 'test123', 'employees_db');
+          $this->Connection = mysqli_connect('localhost', 'root', '', 'goofocus');
 
           if(!$this->Connection){
               $message = 'Connection Error: ' .mysqli_connect_error();
