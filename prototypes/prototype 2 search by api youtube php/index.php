@@ -171,7 +171,7 @@
                         <div class="videoInfo">
                         <div class="videoTitle"><b><?php echo $title; ?></b></div>
                         <div class="videoDesc"><?php echo $description; ?></div>
-                        <button name="AddToPlaylist">✔</button>
+                        <button type='submit' name="AddToPlaylist">+</button>
                         </div>
                         </div>
            <?php 

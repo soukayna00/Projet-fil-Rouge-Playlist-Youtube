@@ -4,7 +4,7 @@ session_start();
 class Connection{
   public $host = "localhost";
   public $user = "root";
-  public $password = "";
+  public $password ="";
   public $db_name = "goofocus";
   public $conn;
 
@@ -15,7 +15,7 @@ class Connection{
 
 class Register extends Connection{
   public function registration($name, $username, $email, $password, $confirmpassword){
-    $duplicate = mysqli_query($this->conn, "SELECT * FROM tb_user WHERE username = '$username' OR email = '$email'");
+    $duplicate = mysqli_query($this->conn, "SELECT * FROM user WHERE username = '$username' OR email = '$email'");
     if(mysqli_num_rows($duplicate) > 0){
       return 10;
       // Username or email has already taken
