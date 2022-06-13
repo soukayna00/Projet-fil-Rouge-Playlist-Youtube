@@ -18,7 +18,7 @@
 <!doctype html>
 <html>
     <head>
-        <title>Search Videos by keyword using YouTube Data API V3</title>
+        <title>Search Videos </title>
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
@@ -171,7 +171,7 @@
                         <div class="videoInfo">
                         <div class="videoTitle"><b><?php echo $title; ?></b></div>
                         <div class="videoDesc"><?php echo $description; ?></div>
-                        <button>✔</button>
+                        <button name="AddToPlaylist">✔</button>
                         </div>
                         </div>
            <?php 

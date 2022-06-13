@@ -143,10 +143,13 @@ margin-left: 100px;
 }
 
 /* footer css */
-/* footer {
->>>>>>> e9b0e6cdd1d79a685ca76ab3c2f5a3c0469290a1
-  background-color:#002147;
-  text-align: center;
-  padding: 3px;
-  color: white;
-} */
+.footer-distributed{
+  background-color: #002147;
+  box-sizing: border-box;
+  widows: 100%;
+  font : bold 16px  ,sans-serif;
+  padding: 50px 50px 60px 50px ;
+  margin: 80px;
+  
+}
+
