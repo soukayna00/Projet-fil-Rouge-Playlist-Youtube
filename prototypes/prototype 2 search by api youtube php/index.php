@@ -1,4 +1,8 @@
 <?php
+include 'videoManager.php';
+
+
+
     define("MAX_RESULTS", 15);
     
      if (isset($_POST['submit']) )
@@ -110,9 +114,7 @@
             }
         </style>
         
-    </head>
-    <body>
-        <h2>Search Videos by keyword using YouTube Data API V3</h2>
+        <h2>Search Videos  using YouTube Data API V3</h2>
         <div class="search-form-container">
             <form id="keywordForm" method="post" action="">
                 <div class="input-row">
@@ -124,8 +126,12 @@
         </div>
         
         <?php if(!empty($response)) { ?>
-                <div class="response <?php echo $response["type"]; ?>"> <?php echo $response["message"]; ?> </div>
-        <?php }?>
+                <div class="response <?php echo $response["type"]; ?>"> <?php echo $response["message"];} ?> </div>
+       
+       
+
+
+
         <?php
             if (isset($_POST['submit']) )
             {

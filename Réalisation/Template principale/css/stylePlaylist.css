@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rosarivo:ital@1&family=Rozha+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Roboto&family=Rosarivo:ital@1&family=Rozha+One&display=swap');
+
+
 *{
   box-sizing: border-box;
   margin: 0;
@@ -49,63 +53,3 @@ button:hover{
   color: #FDC800;
   background-color: #ffffff;
 }
-
-
-#timer {
-  font-size:150px;
-  margin:0 auto;
-  width:1000px;
-}
-
-#controls {
-  margin:0 auto;
-  width:600px;    
-}
-
-#controls button {
-  font-size:24px;
-}
-.material-stop{
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 48
-}
-
-
-.content{
-text-align:center;
-}
-
-.content h1{
- font-size: 60px;
- color: #FDC800;
-}
-.backcontent{
- position:absolute;
- right: 0;
- bottom: 0;
- z-index: -1;
- height: 100%;
- width:100%;
- background-color: rgb(247, 245, 245);
-}
-span{
-color: aliceblue; 
-}
-
-
-
-
-
-
-
-
-
- /* footer css */
-
-
- 
- 
- 

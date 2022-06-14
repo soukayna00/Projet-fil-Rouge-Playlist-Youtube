@@ -18,7 +18,33 @@ class videoManager {
       return $this->Connection;
   }
 
+
+  public function insertvideo($video){
+      $Video_Id = $video->getVideo_Id();
+      $title = $video->getTitle();
+      $description = $video->getDescription();
+    
+
+           // sql insert query
+  $sqlInsertQuery = "INSERT INTO video (Video_Id, title, description) 
+                      VALUES('$Video_Id', 
+                              '$title,
+                              '$description')";
+
+  mysqli_query($this->getConnection(), $sqlInsertQuery);
+  }
+
+
+  public function deleteEmployee($id){
+      $sqlDeleteQuery = "DELETE FROM video WHERE id= '$id'";
+
+      mysqli_query($this->getConnection(), $sqlDeleteQuery);
+  }
+
+
 }
+
+
 
 
 ?>
