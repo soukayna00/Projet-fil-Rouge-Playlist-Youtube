@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rosarivo:ital@1&family=Rozha+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Roboto&family=Rosarivo:ital@1&family=Rozha+One&display=swap');
+
+
+
+/* * nav bar css */ */
 *{
   box-sizing: border-box;
   margin: 0;
@@ -51,10 +57,23 @@ button:hover{
 }
 
 
+
+
+/* content css */
+.content h3{
+  font-family: 'DM Serif Display',sans-serif;
+  font-weight: 400;
+  font-size: 50px;
+  color: #ffffff;
+
+  }
+
+
 #timer {
-  font-size:150px;
+  font-size:40px;
   margin:0 auto;
   width:1000px;
+  color: #FDC800;
 }
 
 #controls {
@@ -64,6 +83,7 @@ button:hover{
 
 #controls button {
   font-size:24px;
+  margin-top: 20px;
 }
 .material-stop{
   font-variation-settings:
@@ -75,25 +95,29 @@ button:hover{
 
 
 .content{
-text-align:center;
-}
-
+  text-align:center;
+  }
 .content h1{
  font-size: 60px;
  color: #FDC800;
 }
-.backcontent{
+#backcontent{
  position:absolute;
- right: 0;
- bottom: 0;
+  top:0;
+  right: 0;
+  left: 0;
+  bottom: 0;
  z-index: -1;
- height: 100%;
- width:100%;
- background-color: rgb(247, 245, 245);
+background-color: #000000;
+height: 100%;
+width:100%;
 }
+
+
 span{
-color: aliceblue; 
+  color: #002147;
 }
+ 
 
 
 
