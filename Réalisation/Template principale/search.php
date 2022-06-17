@@ -67,6 +67,7 @@ include 'config.php';
         <?php if(!empty($response)) { ?>
                 <div class="response <?php echo $response["type"]; ?>"> <?php echo $response["message"]; ?> </div>
         <?php }?>
+
         <?php
             if (isset($_POST['submit']) )
             {

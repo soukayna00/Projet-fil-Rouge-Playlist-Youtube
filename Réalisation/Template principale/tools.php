@@ -20,14 +20,14 @@
      <nav>
        <ul class="nav-links">
          <li><a href="home.php"style="color:white;">Home</a></li>
-         <li><a href="search.php">Get started</a></li>
+         <li><a href="search.php"style="color:white;">Get started</a></li>
          <li><a href="YourPlaylist.php"style="color:white;">Your Playlist</a></li>
          <li><a href="tools.php"style="color:white;">Your Tools</a></li>
          
          
        </ul>
      </nav>
-     <a href="login-register.html" class="cta"><button>Login/Register</button></a>
+     <a href="login.php" class="cta"><button>Login/Register</button></a>
    </header>
 <br>
                 

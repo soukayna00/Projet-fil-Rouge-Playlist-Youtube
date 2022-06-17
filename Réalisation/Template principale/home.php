@@ -38,7 +38,7 @@
        <img src="assets\img\hero-header.png" style="height: 490px; " alt="">
    </div>
 </div>
-<h2 style="margin-left: 700px;margin-top:180px;font-size:40px; color:#002147">How does it work?</h2>
+<h2 style="margin-left: 450px;margin-top:180px;font-size:40px; color:#002147">How does it work?</h2>
     
 <!-- second section : how it works -->
 <div class="container2">
@@ -218,7 +218,7 @@
       <img src="./assets/img/logo.png" style="width:200px; background-color:#ffbe00;" >
     </div>
     <div><a class="image" href="https://codepen.io/z-" target="_blank" style="background-image: url(&quot;https://s3-us-west-2.amazonaws.com/s.cdpn.io/199011/happy.svg&quot;)"></a>
-      <p>© Cpooyright By GooFocus 2022.</p>
+      <p>© Copyright By GooFocus 2022.</p>
     </div>
   </div>
 </div>

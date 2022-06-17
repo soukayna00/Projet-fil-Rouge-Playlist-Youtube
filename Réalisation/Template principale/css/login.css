@@ -1,0 +1,17 @@
+.wrapper{
+  width: 40%;
+  height: 100%;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  margin-top: 100px;
+  padding: 12px;
+  background-color: aliceblue;
+  background-image: url("Réalisation\Template principale\1.jpg");
+  border-radius: 12px;
+  
+}
+body{
+  background-color: #002147;
+}
+

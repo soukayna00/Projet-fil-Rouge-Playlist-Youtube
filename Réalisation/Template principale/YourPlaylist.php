@@ -2,26 +2,49 @@
 
 include "config.php";
 
+
+
+
+
+// si le bouton est cliqué ajoute a la base de données
 if (ISSET ($_GET['id'])) {
  
 
- $VideoId = $_GET['id'];
- $title = $_GET['title'];
- $description = $_GET['description'];
+  $VideoId = $_GET['id'];
+  $title = $_GET['title'];
+  $description = $_GET['description'];
+ 
+       $connect = mysqli_connect ('localhost', 'root','','goofocus');
+ 
+ 
+      
+ 
+      mysqli_query($connect, "INSERT INTO  video (VideoId,title,description,User_Id) values('$VideoId','$title','$description','1')");
+   
+      mysqli_close($connect);
+ 
+ 
+  } else {'echo not registered in the database!';}
 
-      $connect = mysqli_connect ('localhost', 'root','','goofocus');
+// if (ISSET ($_GET['id'])) {
+ 
 
-
-     
-
-     mysqli_query($connect, "INSERT INTO  video (VideoId,title,description,User_Id) values('$VideoId','$title','$description','1')");
-  
-     mysqli_close($connect);
-
-
- } else {'echo not registered in the database!';}
-
-
+//   $VideoId = $_GET['id'];
+//   $title = $_GET['title'];
+//   $description = $_GET['description'];
+ 
+//        $connect = mysqli_connect ('localhost', 'root','','goofocus');
+ 
+ 
+      
+ 
+//       mysqli_query($connect, "DELETE FROM  video WHERE id='$id'");
+   
+//       mysqli_close($connect);
+ 
+ 
+//   } else {'echo not registered in the database!';}
+ 
 
 
  ?> 
@@ -54,6 +77,8 @@ if (ISSET ($_GET['id'])) {
   
 
      <?php
+    //  afficher les video ajouter à la base de donnée
+
        $connect = mysqli_connect ('localhost', 'root','','goofocus');
    $sql ="SELECT * FROM video";
 $result =mysqli_query($connect,$sql);
@@ -65,8 +90,8 @@ foreach($result as $row){
    <iframe id="iframe" style="width:100%;height:100%" src="//www.youtube.com/embed/ <?php echo $row['VideoId']; ?>" 
                                     data-autoplay-src="//www.youtube.com/embed/<?php echo $row['VideoId']; ?>?autoplay=1"></iframe>
                                     <?php   echo $row['title']; ?>
-                                   
-
+                                     <br><br>
+ <button type='submit' name="delete">Delete</button>
 </div>   
 <?php }?>
 
@@ -76,12 +101,13 @@ foreach($result as $row){
       display: inline-block;
       width: 50%;
       height: 50%;
+    }
  </style>
 </html>
 
 
      
 
-
+    
 
   
