@@ -1,9 +1,10 @@
+
 <?php
-include 'videoManager.php';
+
+include 'connection.php';
 
 
-
-    define("MAX_RESULTS", 15);
+    define("MAX_RESULTS", 40);
     
      if (isset($_POST['submit']) )
      {
@@ -17,7 +18,25 @@ include 'videoManager.php';
                 );
         } 
     }
-         
+// when click on button addto playlist sends data to database
+       
+//  if (ISSET ($_POST['AddToPlaylist'])) {
+
+//     $VideoId = $_GET['VideoId'];
+//     $title = $_GET['title'];
+//     $description = $_GET['description,'];
+
+
+//         $connect = mysqli_connect ('localhost', 'root','', 'goofocus');
+
+//         mysqli_query ($connect, "INSERT INTO  video (VideoId,title,'description') values ($VideoId,$title,$description)");
+
+//         mysqli_close($connect);
+
+
+//     } else {'echo not registered in the database!';}
+    
+            
 ?>
 <!doctype html>
 <html>
@@ -114,7 +133,38 @@ include 'videoManager.php';
             }
         </style>
         
-        <h2>Search Videos  using YouTube Data API V3</h2>
+    </head>
+    <body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="C:\xampp\htdocs\Projet fil Rouge Playlist Youtube\Réalisation\Template principale\css\styleHome.css">
+</head>
+<body>
+  
+</body>
+
+</head>
+ <body>
+   <header>
+     <img class='logo' src="assets\img\GooFocus_free-file.png" alt="logo">
+     <nav>
+       <ul class="nav-links">
+         <li><a href="./index.php">Home</a></li>
+         <li><a href="./playlistpage.php">Your Playlist</a></li>
+         <li><a href="tools.html">Your Tools</a></li>
+         <li><a href="aboutUs.html">About Us</a></li>
+       </ul>
+     </nav>
+     <a href="login-register.html" class="cta"><button>Login/Register</button></a>
+   </header>
+<br>
+</html>
+        <h2>Search Videos by keyword using YouTube Data API V3</h2>
         <div class="search-form-container">
             <form id="keywordForm" method="post" action="">
                 <div class="input-row">
@@ -126,12 +176,8 @@ include 'videoManager.php';
         </div>
         
         <?php if(!empty($response)) { ?>
-                <div class="response <?php echo $response["type"]; ?>"> <?php echo $response["message"];} ?> </div>
-       
-       
-
-
-
+                <div class="response <?php echo $response["type"]; ?>"> <?php echo $response["message"]; ?> </div>
+        <?php }?>
         <?php
             if (isset($_POST['submit']) )
             {
@@ -140,6 +186,8 @@ include 'videoManager.php';
               {
                 $apikey = 'AIzaSyDdi8y1wCTzDGzluQ3rEEYlg5qrFZ00ttU'; 
                 $googleApiUrl = 'https://www.googleapis.com/youtube/v3/search?part=snippet&q=' . preg_replace('/\s+/', '+', $keyword) . '&maxResults=' . MAX_RESULTS . "&type=video" . '&key=' . $apikey;
+
+                // initialisation a cURL session
 
                 $ch = curl_init();
 
@@ -171,13 +219,13 @@ include 'videoManager.php';
     
                         <div class="video-tile">
                         <div  class="videoDiv">
-                            <iframe id="iframe" style="width:100%;height:100%" src="//www.youtube.com/embed/<?php echo $videoId; ?>" 
+                            <iframe id="iframe" style="width:100%;height:100%" src="//www.youtube.com/embed/ <?php echo $videoId; ?>" 
                                     data-autoplay-src="//www.youtube.com/embed/<?php echo $videoId; ?>?autoplay=1"></iframe>                     
                         </div>
                         <div class="videoInfo">
                         <div class="videoTitle"><b><?php echo $title; ?></b></div>
                         <div class="videoDesc"><?php echo $description; ?></div>
-                        <button type='submit' name="AddToPlaylist">+</button>
+                       <a href="playlistpage.php?id=<?php echo $videoId; ?>&title=<?php echo $title; ?>&description=<?php echo $description; ?>"> <button type='submit' name="AddToPlaylist">+</button></a>
                         </div>
                         </div>
            <?php 
@@ -189,6 +237,8 @@ include 'videoManager.php';
             ?> 
             
         </div>
+        
+    
         
      
     </body>

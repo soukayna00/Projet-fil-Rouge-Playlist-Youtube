@@ -1,7 +1,7 @@
 
 <?php
 
-include 'connection.php';
+include 'config.php';
 
 
     define("MAX_RESULTS", 40);
@@ -21,142 +21,48 @@ include 'connection.php';
 
             
 ?>
-<!doctype html>
-<html>
-    <head>
-        <title>Search Videos </title>
 
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-        <style>
-
-            body {
-                font-family: Arial;
-                width: 900px;
-                padding: 10px;
-            }
-            .search-form-container {
-                background: #F0F0F0;
-                border: #e0dfdf 1px solid;
-                padding: 20px;
-                border-radius: 2px;
-            }
-            .input-row {
-                margin-bottom: 20px;
-            }
-            .input-field {
-                width: 100%;
-                border-radius: 2px;
-                padding: 10px;
-                border: #e0dfdf 1px solid;
-            }
-            .btn-submit {
-                padding: 10px 20px;
-                background: #333;
-                border: #1d1d1d 1px solid;
-                color: #f0f0f0;
-                font-size: 0.9em;
-                width: 100px;
-                border-radius: 2px;
-                cursor:pointer;
-            }
-            .videos-data-container {
-                background: #F0F0F0;
-                border: #e0dfdf 1px solid;
-                padding: 20px;
-                border-radius: 2px;
-            }
-            
-            .response {
-                padding: 10px;
-                margin-top: 10px;
-                border-radius: 2px;
-            }
-
-            .error {
-                 background: #fdcdcd;
-                 border: #ecc0c1 1px solid;
-            }
-
-           .success {
-                background: #c5f3c3;
-                border: #bbe6ba 1px solid;
-            }
-            .result-heading {
-                margin: 20px 0px;
-                padding: 20px 10px 5px 0px;
-                border-bottom: #e0dfdf 1px solid;
-            }
-            iframe {
-                border: 0px;
-            }
-            .video-tile {
-                display: inline-block;
-                margin: 10px 10px 20px 10px;
-            }
-            
-            .videoDiv {
-                width: 250px;
-                height: 150px;
-                display: inline-block;
-            }
-            .videoTitle {
-                text-overflow: ellipsis;
-                white-space: nowrap;
-                overflow: hidden;
-            }
-            
-            .videoDesc {
-                text-overflow: ellipsis;
-                white-space: nowrap;
-                overflow: hidden;
-            }
-            .videoInfo {
-                width: 250px;
-            }
-        </style>
-        
-    </head>
-    <body>
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="C:\xampp\htdocs\Projet fil Rouge Playlist Youtube\Réalisation\Template principale\css\styleHome.css">
+  <link rel='stylesheet' href='css/search.css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <title>search</title>
 </head>
 <body>
-  
-</body>
-
-</head>
- <body>
+<body>
    <header>
      <img class='logo' src="assets\img\GooFocus_free-file.png" alt="logo">
      <nav>
        <ul class="nav-links">
-         <li><a href="./index.php">Home</a></li>
-         <li><a href="./playlistpage.php">Your Playlist</a></li>
-         <li><a href="tools.html">Your Tools</a></li>
-         <li><a href="aboutUs.html">About Us</a></li>
+         <li><a href="home.php">Home</a></li>
+         <li><a href="search.php">Get started</a></li>
+         <li><a href="YourPlaylist.php">Your Playlist</a></li>
+         <li><a href="tools.php">Your Tools</a></li>
        </ul>
+  
+
      </nav>
-     <a href="login-register.html" class="cta"><button>Login/Register</button></a>
+     <a href="login.php" class="cta"><button>Login/Register</button></a>
    </header>
 <br>
+</body>
 </html>
-        <h2>Search Videos by keyword using YouTube Data API V3</h2>
+<h1 id='title'>Search on Goofocus</h1>
+<div class="container">
         <div class="search-form-container">
             <form id="keywordForm" method="post" action="">
                 <div class="input-row">
-                    Search Keyword : <input class="input-field" type="search" id="keyword" name="keyword"  placeholder="Enter Search Keyword">
+                <input class="input-field" type="search" id="keyword" name="keyword"  placeholder="Please search the subject you want to study">
                 </div>
-
                 <input class="btn-submit"  type="submit" name="submit" value="Search">
-            </form>
-        </div>
+              </form></div>
+        <div class="imagegetstarted">
+        <img  src="assets\img\cta.png" style="width:200px ;" alt="hello"></div>
+  </div>
         
         <?php if(!empty($response)) { ?>
                 <div class="response <?php echo $response["type"]; ?>"> <?php echo $response["message"]; ?> </div>
@@ -208,7 +114,7 @@ include 'connection.php';
                         <div class="videoInfo">
                         <div class="videoTitle"><b><?php echo $title; ?></b></div>
                         <div class="videoDesc"><?php echo $description; ?></div>
-                       <a href="addtoplaylist.php?id=<?php echo $videoId; ?>&title=<?php echo $title; ?>&description=<?php echo $description; ?>"> <button type='submit' name="AddToPlaylist">+</button></a>
+                       <a href="YourPlaylist.php?id=$id<?php echo $videoId; ?>&title=<?php echo $title; ?>&description=<?php echo $description; ?>"> <button type='submit' name="AddToPlaylist">+</button></a>
                         </div>
                         </div>
            <?php 
@@ -226,3 +132,17 @@ include 'connection.php';
      
     </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

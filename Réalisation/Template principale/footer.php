@@ -1,85 +1,16 @@
+
+
 <!DOCTYPE html>
- <html lang="en">
- <head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>home page</title>
-   <link rel="stylesheet" href="css\styleHome.css">
- </head>
-
-
- <body>
-   <header>
-     <img class='logo' src="assets\img\GooFocus_free-file.png" alt="logo">
-     <nav>
-       <ul class="nav-links">
-         <li><a href="home.php">Home</a></li>
-         <li><a href="search.php">Get started</a></li>
-         <li><a href="YourPlaylist.php">Your Playlist</a></li>
-         <li><a href="tools.php">Your Tools</a></li>
-       </ul>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
   
-
-     </nav>
-     <a href="login.php" class="cta"><button>Login/Register</button></a>
-   </header>
-<br>
-  <!-- first section   -->
- <div class="container">
-   <div class="container-1-Texts">
-          <h1>BOOST  YOUR <br> PRODUCTIVITY 
-         AND <br> CONCENTRATION WITH <br>GOOFOCUS </h1>
-         <br>
-       <h3>We provide to students a distract free social Media using Youtube API</h3><br><br>
-      <a href="search.php" class="cta"><button>Get started</button></a>
-   </div>
-    <div class="container-1-image">
-       <img src="assets\img\hero-header.png" style="height: 490px; " alt="">
-   </div>
-</div>
-<h2 style="margin-left: 700px;margin-top:180px;font-size:40px; color:#002147">How does it work?</h2>
-    
-<!-- second section : how it works -->
-<div class="container2">
-    <div class="clss1">
-      <img src="assets\img\published.png" style="height: 120px;" alt="img1">
-      <h4>Search the subject you want to study</h4>
-    </div>
-    <div class="clss2">
-    <img src="assets\img\funfacts.png" style="height: 120px;" alt="">
-    <h4>Add the videos you choosed to your playlist</h4>
-    </div>
-    <div class="clss3">
-    <img src="assets\img\published.png" style="height: 120px; " alt="">
-    <h4>Set a Timer to track your study time</h4>
-    </div>
-    <div class="clss4">
-      <img src="assets\img\awards.png" style="height: 120px;" alt="">
-      <h4>Play your playlist</h4>
-    </div>
-</div>
-
-<!-- third section : search bar -->
-<div class="search-section">
-    <div class="img-search">
-      <img src="assets\img\cta.png"  alt="hello">
-    </div>
-    <div class="text-search">
-       <h3>Search on GooFocus</h3>
-       <input type="text" id="keyword">
-      <button>Search</button>
-    </div>
-</div>
-
-
-
-
-
-<!-- footer -->
-
-		<footer class="footer-distributed">
-
 	
 <div class="main"></div>
 <div class="footer">
@@ -231,15 +162,8 @@
     </filter>
   </defs>
 </svg>
-
-		</footer>
-   
-
 </body>
 </html>
 
 
 
-
- </body>
- </html>  

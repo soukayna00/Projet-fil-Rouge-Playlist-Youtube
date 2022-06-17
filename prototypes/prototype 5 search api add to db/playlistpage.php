@@ -19,7 +19,7 @@
      <nav>
        <ul class="nav-links">
          <li><a href="./index.php">Home</a></li>
-         <li><a href="./playlistpage.html">Your Playlist</a></li>
+         <li><a href="./playlistpage.php">Your Playlist</a></li>
          <li><a href="tools.html">Your Tools</a></li>
          <li><a href="aboutUs.html">About Us</a></li>
        </ul>

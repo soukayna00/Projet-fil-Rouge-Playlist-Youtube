@@ -33,10 +33,6 @@ class video{
         $this->description = $description;
       }
 
-
-
-
-
 }
 
 

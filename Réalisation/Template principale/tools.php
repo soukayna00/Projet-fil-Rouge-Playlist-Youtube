@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     
     
-    <link rel="stylesheet" href="styleTimer.css">
+    <link rel="stylesheet" href="css/styleTimer.css">
    
    <title>Tools page</title>
  </head>
@@ -19,10 +19,12 @@
      <img class='logo' src="assets\img\GooFocus_free-file.png" alt="logo">
      <nav>
        <ul class="nav-links">
-         <li><a href="index.php"style="color:white;">Home</a></li>
+         <li><a href="home.php"style="color:white;">Home</a></li>
+         <li><a href="search.php">Get started</a></li>
          <li><a href="YourPlaylist.php"style="color:white;">Your Playlist</a></li>
          <li><a href="tools.php"style="color:white;">Your Tools</a></li>
-         <li><a href="aboutUs.html"style="color:white;">About Us</a></li>
+         
+         
        </ul>
      </nav>
      <a href="login-register.html" class="cta"><button>Login/Register</button></a>
@@ -48,7 +50,7 @@
         <br><br>
         </div>
   </div>
-  <script src="tools.js"></script>
+  <script src="js/tools.js"></script>
     </body>
 
     <!-- footer -->
