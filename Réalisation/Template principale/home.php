@@ -5,7 +5,7 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>home page</title>
-   <link rel="stylesheet" href="css\styleHome.css">
+   <link rel="stylesheet" href="css/styleHome.css">
  </head>
 
 
@@ -43,19 +43,19 @@
 <!-- second section : how it works -->
 <div class="container2">
     <div class="clss1">
-      <img src="assets\img\published.png" style="height: 120px;" alt="img1">
+      <img src="assets\img\published.png" style="height: 120px;margin-left:55px" alt="img1">
       <h4>Search the subject you want to study</h4>
     </div>
     <div class="clss2">
-    <img src="assets\img\funfacts.png" style="height: 120px;" alt="">
+    <img src="assets\img\funfacts.png" style="height: 120px;margin-left:55px" alt="">
     <h4>Add the videos you choosed to your playlist</h4>
     </div>
     <div class="clss3">
-    <img src="assets\img\published.png" style="height: 120px; " alt="">
+    <img src="assets\img\published.png" style="height: 120px;margin-left:55px " alt="">
     <h4>Set a Timer to track your study time</h4>
     </div>
     <div class="clss4">
-      <img src="assets\img\awards.png" style="height: 120px;" alt="">
+      <img src="assets\img\awards.png" style="height: 120px;margin-left:17px" alt="">
       <h4>Play your playlist</h4>
     </div>
 </div>
@@ -65,10 +65,14 @@
     <div class="img-search">
       <img src="assets\img\cta.png"  alt="hello">
     </div>
+  
     <div class="text-search">
-       <h3>Search on GooFocus</h3>
-       <input type="text" id="keyword">
-      <button>Search</button>
+    <h3>Let's Get in Touch</h3>
+
+       <input type="text" value="userame">
+      <input type="text"  value="email">
+      <input type="text" value="message">
+      <button>Send</button>
     </div>
 </div>
 

@@ -34,20 +34,72 @@ include 'config.php';
 </head>
 <body>
 <body>
-   <header>
-     <img class='logo' src="assets\img\GooFocus_free-file.png" alt="logo">
-     <nav>
-       <ul class="nav-links">
-         <li><a href="home.php">Home</a></li>
-         <li><a href="search.php">Get started</a></li>
-         <li><a href="YourPlaylist.php">Your Playlist</a></li>
-         <li><a href="tools.php">Your Tools</a></li>
-       </ul>
-  
+<!-- nav bar start -->
+<nav>
+<img class='logo' src="assets\img\GooFocus_free-file.png" alt="logo">
+    <ul>
+     <li><a href="home.php">Home</a></li>
+     <li><a href="search.php">Get started</a></li>
+     <li><a href="YourPlaylist.php">Your Playlist</a></li>
+     <li><a href="tools.php">Your Tools</a></li>
+    </ul>
 
-     </nav>
-     <a href="login.php" class="cta"><button>Login/Register</button></a>
-   </header>
+ <a href="login.php" class="cta"><button>Login/Register</button></a>
+ </nav>
+  <style>
+    * {
+      font-family: poppins;
+    }
+    nav>ul>li>a {
+
+      text-decoration: none;
+      color: black;
+    }
+    nav {
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 70px;
+      width: 100%;
+      position: sticky;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+    .logo{
+  cursor: pointer; 
+
+}
+    nav ul {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+      
+    }
+    nav>ul>li {
+      width: 150px;
+    }
+    nav img {
+      background-color: antiquewhite;
+      margin-left: 30px;
+    }
+    nav>a button {
+      background-color: #c9c9c9;
+      color: white;
+      border: none;
+      padding: 10px;
+      font-size: 15px;
+      border-radius: 5px;
+      margin-right: 30px;
+    }
+  </style>
+<!-- nav bar end -->
+
+
+
 <br>
 </body>
 </html>
@@ -109,13 +161,13 @@ include 'config.php';
     
                         <div class="video-tile">
                         <div  class="videoDiv">
-                            <iframe id="iframe" style="width:100%;height:100%" src="//www.youtube.com/embed/ <?php echo $videoId; ?>" 
-                                    data-autoplay-src="//www.youtube.com/embed/<?php echo $videoId; ?>?autoplay=1"></iframe>                     
+                            <iframe id="iframe" style="width:100%;height:100%" src="//www.youtube.com/embed/<?php echo $videoId;?>" 
+                                    data-autoplay-src="//www.youtube.com/embed/<?php echo $videoId;?>?autoplay=1"></iframe>                     
                         </div>
                         <div class="videoInfo">
                         <div class="videoTitle"><b><?php echo $title; ?></b></div>
                         <div class="videoDesc"><?php echo $description; ?></div>
-                       <a href="YourPlaylist.php?id=$id<?php echo $videoId; ?>&title=<?php echo $title; ?>&description=<?php echo $description; ?>"> <button type='submit' name="AddToPlaylist">+</button></a>
+                       <a href="YourPlaylist.php?id=<?php echo $videoId; ?>&title=<?php echo $title; ?>&description=<?php echo $description; ?>"> <button type='submit' name="AddToPlaylist">+</button></a>
                         </div>
                         </div>
            <?php 

@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rosarivo:ital@1&family=Rozha+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Roboto&family=Rosarivo:ital@1&family=Rozha+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins:wght@200&family=Roboto&family=Rosarivo:ital@1&family=Rozha+One&display=swap');
 
 
 *{
@@ -7,9 +8,10 @@
   margin: 0;
   padding:0;
   background-color: rgb(255, 251, 251);
+  font-family: 'Poppins', sans-serif;
 }
 li,a,button{
-  font-family: 'Montserrat',sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 500;
   font-size: 16px;
   color :black;
@@ -56,8 +58,12 @@ button:hover{
 
 /* video css */
 
-.videoDiv {
-  width: 100%;
-  height: 100%;
+.videoDiv{
   display: inline-block;
+  width: 50%;
+  height: 50%;
+  padding: 10px;
+  background-color:#00B2B2;
+  margin-left: 350px;
+ 
 }
