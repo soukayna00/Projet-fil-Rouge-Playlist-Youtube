@@ -36,7 +36,7 @@ include 'config.php';
 <body>
 <!-- nav bar start -->
 <nav>
-<img class='logo' src="assets\img\GooFocus_free-file.png" alt="logo">
+  <img class='logo' src="assets\img\GooFocus_free-file.png" alt="logo">
     <ul>
      <li><a href="home.php">Home</a></li>
      <li><a href="search.php">Get started</a></li>
@@ -47,6 +47,9 @@ include 'config.php';
  <a href="login.php" class="cta"><button>Login/Register</button></a>
  </nav>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins:wght@200&family=Roboto&family=Rosarivo:ital@1&family=Rozha+One&display=swap');
+
+
     * {
       font-family: poppins;
     }
@@ -103,18 +106,19 @@ include 'config.php';
 <br>
 </body>
 </html>
-<h1 id='title'>Search on Goofocus</h1>
+
 <div class="container">
+
         <div class="search-form-container">
+        <h1 id='title'>Search on Goofocus</h1>
             <form id="keywordForm" method="post" action="">
                 <div class="input-row">
-                <input class="input-field" type="search" id="keyword" name="keyword"  placeholder="Please search the subject you want to study">
-                </div>
+                <input class="input-field" type="search" id="keyword" name="keyword"  placeholder="Please search the subject you want to study"></div>
                 <input class="btn-submit"  type="submit" name="submit" value="Search">
               </form></div>
-        <div class="imagegetstarted">
+        <!-- <div class="imagegetstarted">
         <img  src="assets\img\cta.png" style="width:200px ;" alt="hello"></div>
-  </div>
+  </div> -->
         
         <?php if(!empty($response)) { ?>
                 <div class="response <?php echo $response["type"]; ?>"> <?php echo $response["message"]; ?> </div>
