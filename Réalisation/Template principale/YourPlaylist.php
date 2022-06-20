@@ -82,29 +82,47 @@ $result =mysqli_query($connect,$sql);
 foreach($result as $row){
   // print_r($row);
 ?>
+<div class='container'>
  <div class="videoDiv"> 
 
    <iframe id="iframe" style="width:100%;height:100%" src="//www.youtube.com/embed/<?php echo $row['VideoId']; ?>" 
    data-autoplay-src="//www.youtube.com/embed/<?php echo $row['VideoId']; ?>?autoplay=1"></iframe>
                                     <?php   echo $row['title']; ?>
                                      <br><br>
-    <form action="delete.php" method="$_GET"> <a name="ee" href="delete.php?id=<?php echo $row['id'];?>">Delete</a></form> 
  
-</div>   
-
+ 
+</div> 
+<a  href="delete.php?id=<?php echo $row['id']?>">Delete</a></form>   
+</div>
 <?php }?>
 
  </body>
  <style>
-    .videoDiv{
-      display: inline-block;
-      width: 50%;
-      height: 50%;
-      padding: 10px;
-      background-color:#00B2B2;
-      margin-left: 350px;
+  
+  .heading{
+  color: rgb(36, 29, 29);
+  font-size: 40px;
+  text-align: center;
+  padding: 10px;
+}
+
+body{
+  background-color: #eee;
+}
+.container{
+  display: grid;
+  grid-template-columns: 2fr 1fr ;
+  gap :8px;
+  align-items: flex-start;
+  /* padding:5px 5; */
+
+}
+.videoDiv{
+width:800px;
+height: 400px;
+}
      
-    }
+    
  </style>
 </html>
 

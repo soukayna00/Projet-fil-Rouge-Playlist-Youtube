@@ -8,7 +8,7 @@ include "config.php";
  
 
 
- if (isset($_GET['VideoId'])) {  
+ if (isset($_GET['id'])) {  
       $id = $_GET['id'];  
       $query = "DELETE FROM `video` WHERE id = '$id'";  
       $run = mysqli_query($connect,$query);  
@@ -19,4 +19,4 @@ include "config.php";
       
  } 
 
- header('location:YourPlaylist.php');  
+ header('location:YourPlaylist.php'); 

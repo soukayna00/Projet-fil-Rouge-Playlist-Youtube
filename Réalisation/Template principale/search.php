@@ -36,7 +36,7 @@ include 'config.php';
 <body>
 <!-- nav bar start -->
 <nav>
-  <img class='logo' src="assets\img\GooFocus_free-file.png" alt="logo">
+<img class='logo' src="assets\img\GooFocus_free-file.png" alt="logo">
     <ul>
      <li><a href="home.php">Home</a></li>
      <li><a href="search.php">Get started</a></li>
@@ -86,11 +86,11 @@ include 'config.php';
       width: 150px;
     }
     nav img {
-      background-color: antiquewhite;
+      /* background-color: antiquewhite; */
       margin-left: 30px;
     }
     nav>a button {
-      background-color: #c9c9c9;
+      /* background-color: #c9c9c9; */
       color: white;
       border: none;
       padding: 10px;
