@@ -67,3 +67,10 @@ button:hover{
   margin-left: 350px;
  
 }
+.delete.button{
+  background-color: #FDC800;
+  border: none;
+  border-radius:50px;
+  cursor:pointer;
+  transition :all 0.3s ease 0s;
+}

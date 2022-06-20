@@ -92,7 +92,7 @@ foreach($result as $row){
  
  
 </div> 
-<a  href="delete.php?id=<?php echo $row['id']?>">Delete</a></form>   
+<a id='delete.button' href="delete.php?id=<?php echo $row['id']?>">Delete</a></form>   
 </div>
 <?php }?>
 
