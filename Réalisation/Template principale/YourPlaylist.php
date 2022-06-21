@@ -21,23 +21,6 @@ if (ISSET ($_GET['id'])) {
  
   } else {'echo not registered in the database!';}
 
-// if (ISSET ($_GET['id'])) {
- 
-
-//   $VideoId = $_GET['id'];
-//   $title = $_GET['title'];
-//   $description = $_GET['description'];
-  
- 
-
-      
-         
-//       mysqli_query($connect, "DELETE FROM  video WHERE id='$id'");
-   
-//       mysqli_close($connect);
- 
- 
-//   } else {'echo not registered in the database!';}
  
 
 

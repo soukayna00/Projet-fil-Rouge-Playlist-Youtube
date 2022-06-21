@@ -1,9 +1,10 @@
 <?php
 
+// quand l'utililisateur clique sur delete il le supprime de la base de donnée
 include "config.php";
 
 
-
+// connection à la base de donnée
        $connect = mysqli_connect ('localhost', 'root','','goofocus');
  
 

@@ -3,8 +3,9 @@
 
 include 'config.php';
 
+// code de search keyword
 
-    define("MAX_RESULTS", 40);
+    define("MAX_RESULTS", 100);
     
      if (isset($_POST['submit']) )
      {
@@ -125,6 +126,7 @@ include 'config.php';
         <?php }?>
 
         <?php
+        // fetch api data
             if (isset($_POST['submit']) )
             {
                                          
@@ -151,7 +153,7 @@ include 'config.php';
             ?>
 
             <div class="result-heading">About <?php echo MAX_RESULTS; ?> Results</div>
-            <div class="videos-data-container" id="SearchResultsDiv">
+            <div class="videos-data-container" id="SearchResultsDiv" style="overflow: scroll; height: 500px;">
 
             <?php
                 if(isset($value)){
