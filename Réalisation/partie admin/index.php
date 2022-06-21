@@ -23,12 +23,9 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <img src="img/GooFocus_free-file-removebg-preview.png" alt="">
-<div class="card text-center" style="padding:15px;">
-  <h4>Admin</h4>
-</div><br><br> 
+<img src="img/logo.png" alt="">
+<br><br>
 
-<div class="container">
   <?php
     if (isset($_GET['msg1']) == "insert") {
       echo "<div class='alert alert-success alert-dismissible'>
@@ -44,6 +41,7 @@
             </div>";
     }
   ?>
+  <br>
   <h2>View Records
     <a href="add.php" style="float:right;"><button class="btn btn-success"><i class="fas fa-plus"></i></button></a>
   </h2>
